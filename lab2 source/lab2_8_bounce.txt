@@ -1,0 +1,103 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+//lab2.2
+//////////////////////////////////////////////////////////////////////////////////
+module labkit(
+    input clk_100mhz,
+    input [7:0] switch,
+   
+    input btn_up,       // buttons, depress = high
+    input btn_enter,
+    input btn_left,
+    input btn_down,
+    input btn_right,
+   
+    output [7:0] seg,   //output 0->6 = seg A->G ACTIVE LOW, 
+                        //output 7 = decimal point, all active low
+                
+    output [3:0] dig,   //selects digits 0-3, ACTIVE LOW
+    output [7:0] led,   // 1 turns on leds
+   
+    output [2:0] vgaRed,
+    output [2:0] vgaGreen,
+    output [2:1] vgaBlue,
+    output hsync,
+    output vsync,
+   
+    inout [7:0] ja,
+    inout [7:0] jb,
+    inout [7:0] jc,
+    input [7:0] jd,
+    inout [19:0] exp_io_n,
+    inout [19:0] exp_io_p
+    );
+
+
+    // all unused outputs must be assigned    VERY IMPORTANT!!!!!!
+    assign vgaRed = 3'b111;
+    assign vgaGreen = 3'b111;
+    assign vgaBlue = 2'b11;
+    assign hsync = 1'b1;
+    assign vsync = 1'b1;
+   
+    assign seg = 8'b11111111;
+    assign dig = 4'b1111;
+   
+   ///////////////////////////////////////////////////////////////
+   // Implement the project from here
+  
+   // Input clock: 100 MHz
+   parameter f = 2;
+  parameter c_CNT = 100000000 / f  ;
+  parameter c_CNT_1 = 1*c_CNT;
+  parameter c_CNT_2 = 1*c_CNT+c_CNT_1;
+  parameter c_CNT_3 = 1*c_CNT+c_CNT_2;
+  parameter c_CNT_4 = 1*c_CNT+c_CNT_3;
+  parameter c_CNT_5 = 1*c_CNT+c_CNT_4;
+  parameter c_CNT_6 = 1*c_CNT+c_CNT_5;
+  parameter c_CNT_7 = 1*c_CNT+c_CNT_6;
+  parameter c_CNT_8 = 1*c_CNT+c_CNT_7;
+  
+  reg [31:0] r_CNT = 1;  // stores the counter
+  reg [7:0] r_TOGGLE;    // stores the position of the ON LED
+  reg state;          // 1 bit, stores the wave direction
+  
+  always @ (posedge clk_100mhz)
+    begin
+    
+    case(r_CNT)
+      c_CNT_1: 
+      begin
+        r_TOGGLE <= 7'b0000001;
+        state <= 0;
+      end
+      c_CNT_2: r_TOGGLE <= 8'b00000010;
+      c_CNT_3: r_TOGGLE <= 8'b00000100;
+      c_CNT_4: r_TOGGLE <= 8'b00001000;
+      c_CNT_5: r_TOGGLE <= 8'b00010000;
+      c_CNT_6: r_TOGGLE <= 8'b00100000;
+      c_CNT_7: r_TOGGLE <= 8'b01000000;
+      c_CNT_8:
+      begin
+        r_TOGGLE <= 8'b10000000;
+        state <= 1;
+      end
+      endcase
+     
+     case(state)
+      1'b0: r_CNT = r_CNT+1;  // right to left
+      1'b1: r_CNT = r_CNT-1;  // left to right
+      endcase
+    end
+
+  // switch[0] is the enable switch
+  assign led[0] = r_TOGGLE[0] & switch[0];
+   assign led[1] = r_TOGGLE[1] & switch[0];
+   assign led[2] = r_TOGGLE[2] & switch[0];
+   assign led[3] = r_TOGGLE[3] & switch[0];
+   assign led[4] = r_TOGGLE[4] & switch[0];
+   assign led[5] = r_TOGGLE[5] & switch[0];
+   assign led[6] = r_TOGGLE[6] & switch[0];
+   assign led[7] = r_TOGGLE[7] & switch[0];
+  
+endmodule
