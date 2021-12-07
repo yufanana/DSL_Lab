@@ -1,0 +1,1274 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> Reading design: labkit.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "labkit.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "labkit"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : labkit
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v" into library work
+Parsing module <labkit>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <labkit>.
+WARNING:HDLCompiler:413 - "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v" Line 92: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v" Line 177: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v" Line 178: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v" Line 179: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v" Line 180: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v" Line 181: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v" Line 182: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v" Line 183: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v" Line 184: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v" Line 240: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v" Line 241: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v" Line 242: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v" Line 243: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v" Line 244: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v" Line 245: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v" Line 246: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v" Line 247: Result of 32-bit expression is truncated to fit in 8-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <labkit>.
+    Related source file is "C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_2\lab2.v".
+        freq = 1.500000
+        c_CNT = 66666666.666667
+        c_CNT_1 = 66666666.666667
+        c_CNT_2 = 133333333.333333
+        c_CNT_3 = 200000000.000000
+        c_CNT_4 = 266666666.666667
+        c_CNT_5 = 333333333.333333
+        c_CNT_6 = 400000000.000000
+        c_CNT_7 = 466666666.666667
+        c_CNT_8 = 533333333.333333
+        c_CNT_9 = 600000000.000000
+        s0 = 4'b0000
+        s1 = 4'b0001
+        s2 = 4'b0010
+        s3 = 4'b0011
+        s4 = 4'b0100
+        s5 = 4'b0101
+        s6 = 4'b0110
+        s7 = 4'b0111
+        s8 = 4'b1000
+        f = 0.500000
+        s_CNT = 200000000.000000
+        s_CNT_0 = 0
+        s_CNT_1 = 100000000.000000
+        s_CNT_2 = 300000000.000000
+        s_CNT_3 = 500000000.000000
+        s_CNT_4 = 700000000.000000
+        s_CNT_5 = 900000000.000000
+        s_CNT_6 = 1100000000.000000
+        s_CNT_7 = 1300000000.000000
+        s_CNT_8 = 1500000000.000000
+        s_CNT_9 = 1600000000.000000
+WARNING:Xst:647 - Input <jd> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <btn_right> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <down_cnt>.
+    Found 256-bit register for signal <n0752[255:0]>.
+    Found 256-bit register for signal <n0751[255:0]>.
+    Found 1-bit register for signal <show_hint>.
+    Found 1-bit register for signal <progress_bar>.
+    Found 32-bit register for signal <r_CNT>.
+    Found 5-bit register for signal <state>.
+    Found 1-bit register for signal <press>.
+    Found 8-bit register for signal <led>.
+    Found 32-bit register for signal <clk_cnt>.
+    Found 3-bit register for signal <Random>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 35                                             |
+    | Inputs             | 10                                             |
+    | Outputs            | 5                                              |
+    | Clock              | clk_100mhz (rising_edge)                       |
+    | Power Up State     | 00000                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <clk_cnt[31]_GND_1_o_add_6_OUT> created at line 65.
+    Found 8-bit adder for signal <down_cnt[7]_GND_1_o_add_31_OUT> created at line 92.
+    Found 32-bit adder for signal <r_CNT[31]_GND_1_o_add_928_OUT> created at line 255.
+    Found 32-bit comparator equal for signal <order_list[0][31]_Random[31]_equal_13_o> created at line 84
+    Found 32-bit comparator equal for signal <order_list[1][31]_Random[31]_equal_14_o> created at line 84
+    Found 32-bit comparator equal for signal <order_list[2][31]_Random[31]_equal_15_o> created at line 84
+    Found 32-bit comparator equal for signal <order_list[3][31]_Random[31]_equal_16_o> created at line 84
+    Found 32-bit comparator equal for signal <order_list[4][31]_Random[31]_equal_17_o> created at line 84
+    Found 32-bit comparator equal for signal <order_list[5][31]_Random[31]_equal_18_o> created at line 84
+    Found 32-bit comparator equal for signal <order_list[6][31]_Random[31]_equal_19_o> created at line 84
+    Found 32-bit comparator equal for signal <order_list[7][31]_Random[31]_equal_20_o> created at line 84
+    Found 8-bit comparator lessequal for signal <n0026> created at line 91
+    Found 8-bit comparator equal for signal <switch[7]_sw_order[0][7]_equal_884_o> created at line 198
+    Found 8-bit comparator equal for signal <switch[7]_GND_1_o_equal_886_o> created at line 201
+    Found 8-bit comparator equal for signal <switch[7]_GND_1_o_equal_888_o> created at line 204
+    Found 8-bit comparator equal for signal <switch[7]_GND_1_o_equal_890_o> created at line 207
+    Found 8-bit comparator equal for signal <switch[7]_GND_1_o_equal_892_o> created at line 210
+    Found 8-bit comparator equal for signal <switch[7]_GND_1_o_equal_894_o> created at line 213
+    Found 8-bit comparator equal for signal <switch[7]_GND_1_o_equal_896_o> created at line 216
+    Found 8-bit comparator equal for signal <switch[7]_GND_1_o_equal_898_o> created at line 219
+    WARNING:Xst:2404 -  FFs/Latches <Random<31:3>> (without init value) have a constant value of 0 in block <labkit>.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 598 D-type flip-flop(s).
+	inferred  17 Comparator(s).
+	inferred 377 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <labkit> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
+ 8-bit adder                                           : 1
+# Registers                                            : 10
+ 1-bit register                                        : 3
+ 256-bit register                                      : 2
+ 3-bit register                                        : 1
+ 32-bit register                                       : 2
+ 8-bit register                                        : 2
+# Comparators                                          : 17
+ 32-bit comparator equal                               : 8
+ 8-bit comparator equal                                : 8
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 377
+ 1-bit 2-to-1 multiplexer                              : 204
+ 32-bit 2-to-1 multiplexer                             : 171
+ 8-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <labkit>.
+The following registers are absorbed into counter <clk_cnt>: 1 register on signal <clk_cnt>.
+The following registers are absorbed into counter <down_cnt>: 1 register on signal <down_cnt>.
+Unit <labkit> synthesized (advanced).
+WARNING:Xst:2677 - Node <sw_order_0_8> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_9> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_10> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_11> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_12> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_13> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_14> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_15> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_16> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_17> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_18> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_19> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_20> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_21> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_22> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_23> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_24> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_25> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_26> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_27> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_28> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_29> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_30> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_31> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_40> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_41> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_42> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_43> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_44> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_45> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_46> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_47> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_48> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_49> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_50> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_51> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_52> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_53> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_54> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_55> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_56> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_57> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_58> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_59> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_60> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_61> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_62> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_63> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_72> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_73> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_74> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_75> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_76> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_77> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_78> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_79> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_80> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_81> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_82> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_83> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_84> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_85> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_86> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_87> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_88> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_89> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_90> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_91> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_92> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_93> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_94> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_95> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_104> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_105> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_106> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_107> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_108> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_109> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_110> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_111> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_112> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_113> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_114> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_115> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_116> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_117> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_118> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_119> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_120> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_121> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_122> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_123> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_124> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_125> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_126> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_127> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_136> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_137> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_138> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_139> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_140> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_141> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_142> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_143> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_144> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_145> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_146> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_147> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_148> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_149> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_150> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_151> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_152> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_153> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_154> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_155> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_156> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_157> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_158> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_159> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_168> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_169> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_170> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_171> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_172> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_173> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_174> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_175> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_176> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_177> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_178> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_179> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_180> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_181> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_182> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_183> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_184> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_185> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_186> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_187> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_188> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_189> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_190> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_191> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_200> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_201> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_202> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_203> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_204> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_205> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_206> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_207> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_208> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_209> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_210> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_211> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_212> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_213> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_214> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_215> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_216> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_217> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_218> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_219> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_220> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_221> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_222> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_223> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_232> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_233> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_234> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_235> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_236> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_237> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_238> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_239> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_240> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_241> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_242> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_243> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_244> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_245> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_246> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_247> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_248> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_249> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_250> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_251> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_252> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_253> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_254> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <sw_order_0_255> of sequential type is unconnected in block <labkit>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 366
+ Flip-Flops                                            : 366
+# Comparators                                          : 17
+ 32-bit comparator equal                               : 8
+ 8-bit comparator equal                                : 8
+ 8-bit comparator lessequal                            : 1
+# Multiplexers                                         : 185
+ 1-bit 2-to-1 multiplexer                              : 12
+ 32-bit 2-to-1 multiplexer                             : 171
+ 8-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:4]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00000 | 0000
+ 00001 | 0001
+ 00010 | 0010
+ 00011 | 0011
+ 00100 | 0100
+ 00101 | 0101
+ 00110 | 0110
+ 00111 | 0111
+ 01000 | 1000
+-------------------
+WARNING:Xst:2677 - Node <clk_cnt_3> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_4> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_5> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_6> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_7> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_8> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_9> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_10> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_11> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_12> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_13> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_14> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_15> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_16> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_17> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_18> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_19> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_20> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_21> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_22> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_23> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_24> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_25> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_26> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_27> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_28> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_29> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_30> of sequential type is unconnected in block <labkit>.
+WARNING:Xst:2677 - Node <clk_cnt_31> of sequential type is unconnected in block <labkit>.
+
+Optimizing unit <labkit> ...
+WARNING:Xst:1710 - FF/Latch <order_list_0_163> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_164> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_165> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_166> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_167> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_168> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_169> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_170> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_171> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_172> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_173> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_174> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_175> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_176> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_177> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_178> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_179> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_180> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_181> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_182> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_183> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_184> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_185> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_186> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_187> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_188> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_189> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_190> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_191> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_131> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_132> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_133> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_134> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_135> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_136> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_137> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_138> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_139> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_140> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_141> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_142> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_143> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_144> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_145> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_146> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_147> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_148> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_149> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_150> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_151> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_152> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_153> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_154> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_155> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_156> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_157> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_158> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_159> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_227> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_228> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_229> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_230> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_231> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_232> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_233> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_234> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_235> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_236> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_237> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_238> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_239> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_240> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_241> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_242> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_243> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_244> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_245> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_246> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_247> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_248> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_249> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_250> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_251> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_252> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_253> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_254> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_255> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_195> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_196> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_197> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_198> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_199> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_200> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_201> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_202> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_203> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_204> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_205> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_206> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_207> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_208> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_209> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_210> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_211> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_212> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_213> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_214> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_215> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_216> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_217> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_218> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_219> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_220> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_221> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_222> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_223> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_35> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_36> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_37> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_38> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_39> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_40> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_41> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_42> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_43> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_44> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_45> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_46> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_47> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_48> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_49> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_50> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_51> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_52> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_53> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_54> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_55> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_56> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_57> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_58> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_59> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_60> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_61> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_62> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_63> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_3> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_4> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_5> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_6> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_7> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_8> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_9> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_10> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_11> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_12> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_13> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_14> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_15> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_16> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_17> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_18> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_19> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_20> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_21> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_22> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_23> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_24> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_25> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_26> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_27> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_28> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_29> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_30> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_31> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_99> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_100> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_101> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_102> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_103> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_104> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_105> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_106> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_107> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_108> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_109> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_110> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_111> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_112> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_113> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_114> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_115> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_116> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_117> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_118> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_119> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_120> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_121> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_122> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_123> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_124> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_125> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_126> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_127> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_67> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_68> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_69> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_70> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_71> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_72> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_73> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_74> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_75> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_76> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_77> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_78> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_79> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_80> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_81> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_82> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_83> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_84> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_85> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_86> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_87> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_88> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_89> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_90> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_91> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_92> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_93> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_94> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_95> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <order_list_0_163> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_164> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_165> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_166> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_167> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_168> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_169> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_170> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_171> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_172> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_173> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_174> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_175> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_176> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_177> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_178> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_179> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_180> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_181> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_182> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_183> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_184> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_185> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_186> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_187> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_188> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_189> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_190> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_191> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_131> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_132> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_133> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_134> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_135> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_136> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_137> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_138> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_139> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_140> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_141> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_142> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_143> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_144> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_145> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_146> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_147> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_148> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_149> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_150> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_151> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_152> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_153> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_154> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_155> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_156> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_157> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_158> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_159> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_227> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_228> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_229> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_230> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_231> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_232> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_233> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_234> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_235> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_236> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_237> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_238> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_239> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_240> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_241> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_242> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_243> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_244> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_245> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_246> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_247> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_248> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_249> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_250> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_251> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_252> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_253> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_254> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_255> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_195> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_196> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_197> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_198> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_199> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_200> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_201> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_202> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_203> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_204> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_205> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_206> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_207> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_208> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_209> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_210> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_211> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_212> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_213> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_214> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_215> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_216> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_217> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_218> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_219> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_220> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_221> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_222> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_223> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_35> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_36> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_37> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_38> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_39> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_40> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_41> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_42> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_43> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_44> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_45> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_46> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_47> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_48> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_49> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_50> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_51> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_52> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_53> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_54> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_55> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_56> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_57> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_58> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_59> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_60> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_61> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_62> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_63> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_3> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_4> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_5> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_6> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_7> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_8> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_9> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_10> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_11> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_12> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_13> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_14> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_15> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_16> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_17> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_18> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_19> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_20> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_21> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_22> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_23> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_24> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_25> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_26> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_27> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_28> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_29> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_30> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_31> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_99> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_100> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_101> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_102> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_103> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_104> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_105> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_106> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_107> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_108> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_109> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_110> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_111> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_112> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_113> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_114> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_115> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_116> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_117> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_118> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_119> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_120> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_121> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_122> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_123> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_124> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_125> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_126> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_127> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_67> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_68> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_69> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_70> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_71> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_72> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_73> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_74> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_75> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_76> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_77> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_78> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_79> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_80> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_81> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_82> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_83> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_84> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_85> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_86> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_87> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_88> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_89> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_90> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_91> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_92> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_93> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_94> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <order_list_0_95> (without init value) has a constant value of 0 in block <labkit>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block labkit, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 149
+ Flip-Flops                                            : 149
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : labkit.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 575
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 9
+#      LUT2                        : 47
+#      LUT3                        : 19
+#      LUT4                        : 44
+#      LUT5                        : 110
+#      LUT6                        : 203
+#      MUXCY                       : 88
+#      MUXF7                       : 7
+#      VCC                         : 1
+#      XORCY                       : 43
+# FlipFlops/Latches                : 149
+#      FD                          : 140
+#      FDE                         : 8
+#      FDR                         : 1
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 41
+#      IBUF                        : 11
+#      OBUF                        : 30
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             149  out of  18224     0%  
+ Number of Slice LUTs:                  435  out of   9112     4%  
+    Number used as Logic:               435  out of   9112     4%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    437
+   Number with an unused Flip Flop:     288  out of    437    65%  
+   Number with an unused LUT:             2  out of    437     0%  
+   Number of fully used LUT-FF pairs:   147  out of    437    33%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                         116
+ Number of bonded IOBs:                  43  out of    232    18%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_100mhz                         | BUFGP                  | 50    |
+btn_down                           | BUFGP                  | 99    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 7.377ns (Maximum Frequency: 135.554MHz)
+   Minimum input arrival time before clock: 9.488ns
+   Maximum output required time after clock: 3.668ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_100mhz'
+  Clock period: 7.377ns (frequency: 135.554MHz)
+  Total number of paths / destination ports: 10070 / 58
+-------------------------------------------------------------------------
+Delay:               7.377ns (Levels of Logic = 7)
+  Source:            r_CNT_28 (FF)
+  Destination:       r_TOGGLE_6 (FF)
+  Source Clock:      clk_100mhz rising
+  Destination Clock: clk_100mhz rising
+
+  Data Path: r_CNT_28 to r_TOGGLE_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              13   0.447   0.933  r_CNT_28 (r_CNT_28)
+     LUT2:I1->O           16   0.205   1.109  Mmux_r_CNT[31]_GND_1_o_mux_912_OUT211 (r_CNT[31]_GND_1_o_mux_912_OUT<28>)
+     LUT6:I4->O            6   0.203   0.745  r_CNT[31]_GND_1_o_equal_917_o<31>111_SW1 (N104)
+     LUT6:I5->O           10   0.205   0.857  r_CNT[31]_GND_1_o_equal_923_o<31> (r_CNT[31]_GND_1_o_equal_923_o)
+     LUT6:I5->O           11   0.205   1.247  Mmux_progress_bar_r_CNT[31]_MUX_656_o11 (progress_bar_r_CNT[31]_MUX_656_o)
+     LUT6:I0->O            1   0.203   0.000  Mmux_r_TOGGLE[7]_state[4]_mux_942_OUT75_SW1_F (N178)
+     MUXF7:I0->O           1   0.131   0.580  Mmux_r_TOGGLE[7]_state[4]_mux_942_OUT75_SW1 (N58)
+     LUT6:I5->O            1   0.205   0.000  Mmux_r_TOGGLE[7]_state[4]_mux_942_OUT77 (r_TOGGLE[7]_state[4]_mux_942_OUT<6>)
+     FDE:D                     0.102          r_TOGGLE_6
+    ----------------------------------------
+    Total                      7.377ns (1.906ns logic, 5.471ns route)
+                                       (25.8% logic, 74.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'btn_down'
+  Clock period: 5.695ns (frequency: 175.590MHz)
+  Total number of paths / destination ports: 2972 / 96
+-------------------------------------------------------------------------
+Delay:               5.695ns (Levels of Logic = 10)
+  Source:            Random_2 (FF)
+  Destination:       order_list_0_0 (FF)
+  Source Clock:      btn_down rising
+  Destination Clock: btn_down rising
+
+  Data Path: Random_2 to order_list_0_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              16   0.447   1.233  Random_2 (Random_2)
+     LUT6:I3->O            1   0.205   0.000  Mcompar_order_list[6][31]_Random[31]_equal_19_o_lut<0> (Mcompar_order_list[6][31]_Random[31]_equal_19_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_order_list[6][31]_Random[31]_equal_19_o_cy<0> (Mcompar_order_list[6][31]_Random[31]_equal_19_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_order_list[6][31]_Random[31]_equal_19_o_cy<1> (Mcompar_order_list[6][31]_Random[31]_equal_19_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_order_list[6][31]_Random[31]_equal_19_o_cy<2> (Mcompar_order_list[6][31]_Random[31]_equal_19_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_order_list[6][31]_Random[31]_equal_19_o_cy<3> (Mcompar_order_list[6][31]_Random[31]_equal_19_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_order_list[6][31]_Random[31]_equal_19_o_cy<4> (Mcompar_order_list[6][31]_Random[31]_equal_19_o_cy<4>)
+     MUXCY:CI->O           1   0.213   0.808  Mcompar_order_list[6][31]_Random[31]_equal_19_o_cy<5> (order_list[6][31]_Random[31]_equal_19_o)
+     LUT3:I0->O            3   0.205   0.651  Mmux__n58651_SW0 (N5)
+     LUT6:I5->O           24   0.205   1.173  Mmux__n58651 (_n5865)
+     LUT5:I4->O            1   0.205   0.000  order_list[7][31]_order_list[7][31]_mux_472_OUT<2>1 (order_list[7][31]_order_list[7][31]_mux_472_OUT<2>)
+     FD:D                      0.102          order_list_0_2
+    ----------------------------------------
+    Total                      5.695ns (1.830ns logic, 3.865ns route)
+                                       (32.1% logic, 67.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 5738 / 56
+-------------------------------------------------------------------------
+Offset:              9.488ns (Levels of Logic = 8)
+  Source:            btn_up (PAD)
+  Destination:       r_TOGGLE_6 (FF)
+  Destination Clock: clk_100mhz rising
+
+  Data Path: btn_up to r_TOGGLE_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           150   1.222   2.353  btn_up_IBUF (btn_up_IBUF)
+     LUT5:I0->O            4   0.203   1.028  r_CNT[31]_GND_1_o_equal_916_o<31>1_SW0 (N76)
+     LUT6:I1->O            6   0.203   0.745  r_CNT[31]_GND_1_o_equal_917_o<31>111_SW1 (N104)
+     LUT6:I5->O           10   0.205   0.857  r_CNT[31]_GND_1_o_equal_923_o<31> (r_CNT[31]_GND_1_o_equal_923_o)
+     LUT6:I5->O           11   0.205   1.247  Mmux_progress_bar_r_CNT[31]_MUX_656_o11 (progress_bar_r_CNT[31]_MUX_656_o)
+     LUT6:I0->O            1   0.203   0.000  Mmux_r_TOGGLE[7]_state[4]_mux_942_OUT75_SW1_F (N178)
+     MUXF7:I0->O           1   0.131   0.580  Mmux_r_TOGGLE[7]_state[4]_mux_942_OUT75_SW1 (N58)
+     LUT6:I5->O            1   0.205   0.000  Mmux_r_TOGGLE[7]_state[4]_mux_942_OUT77 (r_TOGGLE[7]_state[4]_mux_942_OUT<6>)
+     FDE:D                     0.102          r_TOGGLE_6
+    ----------------------------------------
+    Total                      9.488ns (2.679ns logic, 6.809ns route)
+                                       (28.2% logic, 71.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'btn_down'
+  Total number of paths / destination ports: 96 / 96
+-------------------------------------------------------------------------
+Offset:              4.704ns (Levels of Logic = 3)
+  Source:            btn_left (PAD)
+  Destination:       down_cnt_0 (FF)
+  Destination Clock: btn_down rising
+
+  Data Path: btn_left to down_cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            89   1.222   2.169  btn_left_IBUF (btn_left_IBUF)
+     LUT6:I0->O            8   0.203   0.803  _n58241 (_n5824)
+     LUT4:I3->O            1   0.205   0.000  down_cnt_0_rstpot (down_cnt_0_rstpot)
+     FD:D                      0.102          down_cnt_0
+    ----------------------------------------
+    Total                      4.704ns (1.732ns logic, 2.972ns route)
+                                       (36.8% logic, 63.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.668ns (Levels of Logic = 1)
+  Source:            r_TOGGLE_7 (FF)
+  Destination:       led<7> (PAD)
+  Source Clock:      clk_100mhz rising
+
+  Data Path: r_TOGGLE_7 to led<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.447   0.650  r_TOGGLE_7 (r_TOGGLE_7)
+     OBUF:I->O                 2.571          led_7_OBUF (led<7>)
+    ----------------------------------------
+    Total                      3.668ns (3.018ns logic, 0.650ns route)
+                                       (82.3% logic, 17.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock btn_down
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+btn_down       |    5.695|         |         |         |
+clk_100mhz     |    1.165|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_100mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+btn_down       |   10.871|         |         |         |
+clk_100mhz     |    7.377|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 33.00 secs
+Total CPU time to Xst completion: 32.90 secs
+ 
+--> 
+
+Total memory usage is 4586864 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  705 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

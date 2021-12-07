@@ -1,0 +1,196 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+//lab2.2
+//////////////////////////////////////////////////////////////////////////////////
+module labkit(
+    input clk_100mhz,
+    input [7:0] switch,
+   
+    input btn_up,       // buttons, depress = high
+    input btn_enter,
+    input btn_left,
+    input btn_down,
+    input btn_right,
+   
+    output [7:0] seg,   //output 0->6 = seg A->G ACTIVE LOW, 
+                        //output 7 = decimal point, all active low
+                
+    output [3:0] dig,   //selects digits 0-3, ACTIVE LOW
+    output [7:0] led,   // 1 turns on leds
+   
+    output [2:0] vgaRed,
+    output [2:0] vgaGreen,
+    output [2:1] vgaBlue,
+    output hsync,
+    output vsync,
+   
+    inout [7:0] ja,
+    inout [7:0] jb,
+    inout [7:0] jc,
+    input [7:0] jd,
+    inout [19:0] exp_io_n,
+    inout [19:0] exp_io_p
+    );
+
+
+    // all unused outputs must be assigned    VERY IMPORTANT!!!!!!
+    assign vgaRed = 3'b111;
+    assign vgaGreen = 3'b111;
+    assign vgaBlue = 2'b11;
+    assign hsync = 1'b1;
+    assign vsync = 1'b1;
+   
+    assign seg = 8'b11111111;
+    assign dig = 4'b1111;
+   
+   ///////////////////////////////////////////////////////////////
+   // Implement the project from here
+  
+   // Input clock: 100 MHz
+   parameter freq = 2;
+	parameter c_CNT = 100000000 / freq  ;
+	parameter c_CNT_0 = 0;
+	parameter c_CNT_1 = c_CNT_0+c_CNT * 0.6;
+	parameter c_CNT_2 = c_CNT_1+c_CNT * 1.4;
+	parameter c_CNT_3 = c_CNT_2+c_CNT * 0.8;
+	parameter c_CNT_4 = c_CNT_3+c_CNT * 0.5;
+	parameter c_CNT_5 = c_CNT_4+c_CNT * 0.3;
+	parameter c_CNT_6 = c_CNT_5+c_CNT * 0.5;
+	parameter c_CNT_7 = c_CNT_6+c_CNT * 0.8;
+	parameter c_CNT_8 = c_CNT_7+c_CNT * 1.4;
+	parameter c_CNT_9 = c_CNT_8+c_CNT * 0.6;
+	
+	// for LED wave display
+	reg [31:0] r_CNT = 0;			// stores the counter
+	reg [7:0] r_TOGGLE;				// stores the position of the ON LED
+	reg [2:0] direction;					// 1 bit, stores the wave direction
+	
+	// for switch sequence
+	reg [7:0] r_TOGGLE_2;
+	reg fail = 1'b0;
+	
+	always @ (posedge clk_100mhz)
+	  begin
+		
+		case(r_CNT)
+		  c_CNT_0: direction <= 0;
+		  c_CNT_1: r_TOGGLE <= 8'b00000001;
+		  c_CNT_2: r_TOGGLE <= 8'b00000010;
+		  c_CNT_3: r_TOGGLE <= 8'b00000100;
+		  c_CNT_4: r_TOGGLE <= 8'b00001000;
+		  c_CNT_5: r_TOGGLE <= 8'b00010000;
+		  c_CNT_6: r_TOGGLE <= 8'b00100000;
+		  c_CNT_7: r_TOGGLE <= 8'b01000000;
+		  c_CNT_8: r_TOGGLE <= 8'b10000000;
+		  c_CNT_9: direction <= 1;
+	    endcase
+		 
+		 case(direction)
+		  1'b0: r_CNT = r_CNT+1;	// right to left
+		  1'b1: r_CNT = r_CNT-1;	// left to right
+	    endcase
+	  end
+	  
+	 // individual switch sequence
+	 parameter a = 8'b00000001;
+	 parameter b = 8'b00000100;
+	 parameter c = 8'b00010000;
+	 parameter d = 8'b01000000;
+	 parameter e = 8'b00000010;
+	 parameter f = 8'b00001000;
+	 parameter g = 8'b00100000;
+	 parameter h = 8'b10000000;
+	 
+	 //parameter [7:0]s0 = 8'b00000000;
+	 
+	 // configure each combination
+	 parameter [7:0]c1 = a;				//0000 0001
+	 parameter [7:0]c2 = 8'b00000101;		//0000 0101
+	 //parameter [7:0]c2 = c1 | b;		//0000 0101
+	 parameter [7:0]c3 = c2 | c;		//0001 0101
+	 parameter [7:0]c4 = c3 | d;		//0101 0101
+	 parameter [7:0]c5 = c4 | e;		//0101 0111
+	 parameter [7:0]c6 = c5 | f;		//0101 1111
+	 parameter [7:0]c7 = c6 | g;		//0111 1111
+	 parameter [7:0]c8 = c7 | h;		//1111 1111	 
+	 
+	 parameter s0 = 4'b0000;
+	 parameter s1 = 4'b0001;
+	 parameter s2 = 4'b0010;
+	 parameter s3 = 4'b0011;
+	 parameter s4 = 4'b0100;
+	 parameter s5 = 4'b0101;
+	 parameter s6 = 4'b0110;
+	 parameter s7 = 4'b0111;
+	 parameter s8 = 4'b1000;
+	 
+	 reg [4:0] state = 4'b0000;
+	 
+	 // check switch input
+	 always @ (switch[0] or switch[1] or switch[2] or switch[3])
+		begin
+			case(state)
+				s0:if (switch == c1) state = s1;				
+					else state = s0;
+				
+				s1: if (switch == c2) state = s2;
+					else state = s0;
+					
+				s2: if (switch == c3) state = s3;
+					else state = s0;
+					
+				s3: if (switch == c4) state = s4;
+					else state = s0;
+					
+				s4: if (switch == c5) state = s5;
+					else state = s0;
+				
+				s5: if (switch == c6) state = s6;
+					else state = s0;
+				
+				s6: if (switch == c7) state = s7;
+					else state = s0;
+				
+				s7: if (switch == c8) state = s8;
+					else state = s0;
+				
+				s8: state = s8;
+			endcase
+	 end
+	 
+	 // display progress bar based on the state
+	 always @ (*)
+		begin
+			case(state)
+				s0: r_TOGGLE_2 <= 8'b00000000;
+				s1: r_TOGGLE_2 <= 8'b00000001;
+				s2: r_TOGGLE_2 <= 8'b00000011;
+				s3: r_TOGGLE_2 <= 8'b00000111;
+				s4: r_TOGGLE_2 <= 8'b00001111;
+				s5: r_TOGGLE_2 <= 8'b00011111;
+				s6: r_TOGGLE_2 <= 8'b00111111;
+				s7: r_TOGGLE_2 <= 8'b01111111;
+				s8: r_TOGGLE_2 <= 8'b10111111;
+			endcase
+		end
+	 	
+    //assign led[0] = r_TOGGLE[0];
+    //assign led[1] = r_TOGGLE[1];
+    //assign led[2] = r_TOGGLE[2]; 
+    //assign led[3] = r_TOGGLE[3];
+    //assign led[4] = r_TOGGLE[4]; 
+    //assign led[5] = r_TOGGLE[5];
+    //assign led[6] = r_TOGGLE[6];
+    //assign led[7] = r_TOGGLE[7]; 
+
+	 // switch[0] is the enable switch
+	 assign led[0] = r_TOGGLE_2[0];
+    assign led[1] = r_TOGGLE_2[1];
+    assign led[2] = r_TOGGLE_2[2];
+    assign led[3] = r_TOGGLE_2[3];
+    assign led[4] = r_TOGGLE_2[4];
+    assign led[5] = r_TOGGLE_2[5]; 
+    assign led[6] = r_TOGGLE_2[6];
+    assign led[7] = r_TOGGLE_2[7];
+	
+endmodule

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_3\lab3.v" Line 55: Redeclaration of ansi port <arg fmt="%s" index="1">dig</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_3\lab3.v" Line 56: Redeclaration of ansi port <arg fmt="%s" index="1">seg</arg> is not allowed
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="new" >"C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_3\lab3.v" Line 76: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="new" >"C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_3\lab3.v" Line 77: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="new" >"C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_3\lab3.v" Line 78: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="new" >"C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_3\lab3.v" Line 123: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="new" >"C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_3\lab3.v" Line 127: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="new" >"C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_3\lab3.v" Line 131: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="new" >"C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_3\lab3.v" Line 135: Syntax error near &quot;<arg fmt="%s" index="1">=</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="806" delta="new" >"C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_3\lab3.v" Line 139: Syntax error near &quot;<arg fmt="%s" index="1">end</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="old" >"C:\Users\yufan\Documents\SUTD\DSL\Xilinx\lab_3\lab3.v" Line 3: Module &lt;<arg fmt="%s" index="1">labkit</arg>&gt; ignored due to previous errors.
+</msg>
+
+</messages>
+

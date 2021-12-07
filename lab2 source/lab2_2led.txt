@@ -1,0 +1,87 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+//lab2.2
+//////////////////////////////////////////////////////////////////////////////////
+module labkit(
+    input clk_100mhz,
+    input [7:0] switch,
+	 
+    input btn_up,       // buttons, depress = high
+    input btn_enter,
+    input btn_left,
+    input btn_down,
+    input btn_right,
+	 
+    output [7:0] seg,   //output 0->6 = seg A->G ACTIVE LOW, 
+                        //output 7 = decimal point, all active low
+								
+    output [3:0] dig,   //selects digits 0-3, ACTIVE LOW
+    output [7:0] led,   // 1 turns on leds
+	 
+    output [2:0] vgaRed,
+    output [2:0] vgaGreen,
+    output [2:1] vgaBlue,
+    output hsync,
+    output vsync,
+	 
+    inout [7:0] ja,
+    inout [7:0] jb,
+    inout [7:0] jc,
+    input [7:0] jd,
+    inout [19:0] exp_io_n,
+    inout [19:0] exp_io_p
+    );
+
+
+   // all unused outputs must be assigned    VERY IMPORTANT!!!!!!
+   assign vgaRed = 3'b111;
+	assign vgaGreen = 3'b111;
+	assign vgaBlue = 2'b11;
+	assign hsync = 1'b1;
+	assign vsync = 1'b1;
+	 
+	assign seg = 8'b11111111;
+	assign dig = 4'b1111;
+	 
+    ///////////////////////////////////////////////////////////////
+	// Implement the project from here
+
+	assign led[7:0] = 7'b0000000;		// switch off all the LEDs
+	
+	// Input clock: 100 MHz
+	parameter c_CNT_1 = 10000000;
+	parameter c_CNT_2 = 20000000;
+	
+	reg [31:0] r_CNT = 0;
+	
+	reg r_TOGGLE_1 = 1'b0;
+	reg r_TOGGLE_2 = 1'b0;
+	
+	always @ (posedge clk_100mhz)
+	  begin
+	   if(r_CNT < c_CNT_1)
+		   begin
+			   r_TOGGLE_1 <= 1;
+				r_TOGGLE_2 <= 0;
+			end
+	   else if(r_CNT < c_CNT_2)
+		   begin
+			   r_TOGGLE_1 <= 0;
+				r_TOGGLE_2 <= 1;
+			end
+	   else
+			r_CNT <= 0;
+	  end
+	
+	//always @ (*)
+	//begin
+	//	case(switch[0])
+	//		1'b0: r_LED_SELECT <= r_TOGGLE_1Hz;
+	//		1'b1: r_LED_SELECT <= r_TOGGLE_2Hz;
+	//	endcase
+	//end
+	
+   led[0] <= r_TOGGLE_1 & switch[1];
+   led[1] <= r_TOGGLE_2 & switch[1];
+ 
+endmodule
